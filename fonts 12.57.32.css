@@ -1,0 +1,32 @@
+/* Place your own Arial Narrow TTF files in ./fonts/ */
+@font-face {
+  font-family: "Midnight Arial Narrow";
+  src: url("./fonts/Arial Narrow.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Midnight Arial Narrow";
+  src: url("./fonts/Arial Narrow Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Midnight Arial Narrow";
+  src: url("./fonts/Arial Narrow Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Midnight Arial Narrow";
+  src: url("./fonts/Arial Narrow Bold Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+:root {
+  --synth-font: "Midnight Arial Narrow", "Arial Narrow", Arial, sans-serif;
+}
