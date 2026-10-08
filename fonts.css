@@ -1,4 +1,6 @@
 /* Local/system fonts: no external CDN or font download required. */
 :root {
-  --synth-font: "Arial Narrow", "Liberation Sans Narrow", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  --synth-font:
+    "Arial Narrow", "Liberation Sans Narrow", "Roboto Condensed",
+    "Helvetica Neue", Arial, sans-serif;
 }
