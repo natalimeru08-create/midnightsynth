@@ -1,7 +1,0 @@
-Place your own font files here, with these exact names:
-Arial Narrow.ttf
-Arial Narrow Bold.ttf
-Arial Narrow Italic.ttf
-Arial Narrow Bold Italic.ttf
-
-Do not upload this note if you do not want to.

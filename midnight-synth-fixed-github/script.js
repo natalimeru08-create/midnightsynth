@@ -346,7 +346,22 @@
       async function play() {
         init();
         if (state.playing) return;
-        await ac.resume();
+        // iOS Safari: unlock audio synchronously from the PLAY tap.
+        try {
+          const unlock = ac.createOscillator();
+          const silent = ac.createGain();
+          silent.gain.value = 0;
+          unlock.connect(silent);
+          silent.connect(ac.destination);
+          unlock.start();
+          unlock.stop(ac.currentTime + 0.01);
+          await ac.resume();
+          if (ac.state !== "running") throw new Error("AudioContext is not running");
+        } catch (error) {
+          console.error("Audio startup failed:", error);
+          $("status").textContent = "AUDIO ERROR · OPEN IN SAFARI / CHROME";
+          return;
+        }
         epoch++;
         state.playing = true;
         document.body.classList.add("music-playing");
