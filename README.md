@@ -1,16 +1,17 @@
-# midnight synth
+# Midnight Synth
 
-Browser-based electronic club synthesizer built with HTML, CSS and the Web Audio API.
+Готовый сайт для GitHub Pages.
 
-## Publish with GitHub Pages
+Загрузите **содержимое** этой папки в корень репозитория:
 
-1. Create a public GitHub repository (for example, `midnight-synth`).
-2. Upload `index.html`, `README.md` and `.nojekyll` **directly into the repository root** (not inside a subfolder).
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Choose branch **main**, folder **/(root)**, then **Save**.
-6. After deployment, open `https://YOUR-USERNAME.github.io/midnight-synth/`.
+- `index.html` — разметка
+- `styles.css` — дизайн и адаптация
+- `fonts.css` — шрифты (системные, без внешних зависимостей)
+- `script.js` — звук и управление
+- `.nojekyll` — настройка GitHub Pages
 
-Click **PLAY** to start audio. Browsers require a user gesture to enable sound.
+В GitHub: Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
-If you use a different repository name, replace `midnight-synth` in the URL with that name. If your repository is named `YOUR-USERNAME.github.io`, the site URL is `https://YOUR-USERNAME.github.io/`.
+После публикации откройте `https://ВАШ-НИК.github.io/ИМЯ-РЕПОЗИТОРИЯ/`.
+
+Звук запускается кнопкой PLAY после взаимодействия с сайтом.
